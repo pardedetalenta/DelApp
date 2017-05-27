@@ -1,0 +1,43 @@
+@CHARSET "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+.bg-color-header{
+	background-color: #09a0f6;
+	color: white;
+}
+.logo{
+	font-family: Pacifico;
+}
+.center{
+	text-align: center;
+}
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+.item-center{
+	margin: auto;
+}
+.right{
+	float: right;
+}
+.vertikal-line-right{
+	border-right-color: #526475;
+	border-right-width: 1px;
+	border-right-style: groove;
+}
+
+.myCheckbox input {
+    // display: none;
+    // Better than display: none for accessibility reasons
+    position: relative;
+    z-index: -9999;
+}
+
+.myCheckbox span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    
+}

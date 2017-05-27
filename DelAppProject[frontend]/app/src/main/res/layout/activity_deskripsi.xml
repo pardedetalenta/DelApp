@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.talenta.delappproject.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:background="@android:color/holo_blue_dark"
+            app:title="Deskripsi IT DEL"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:text=" Institut Teknologi Del didirikan pada tahun 2001 dan bertujuan untuk menyediakan pendidikan tinggi berkualitas internasional, bagi siswa/i berpotensi, terutama dengan latar belakang ekonomi yang kurang menguntungkan, khususnya yang berasal dari Sumatera Utara. Disamping turut berperan sebagai inisiator penggerak pembangunan di Tapanuli, IT Del juga diharapkan dapat menginkubasi lahirnya para technopreneur baru di bidang teknologi informasi. Tujuan awal Yayasan Del didirikan adalah untuk memberikan akses pendidikan berkualitas di daerah terpencil bagi siswa/i berprestasi dengan latar belakang ekonomi yang kurang menguntungkan, yaitu dengan mendirikan Institut Teknologi Del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="@dimen/margin2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head lang="en" th:replace="layout :: head">
+    </head>
+    <body>
+        <div th:replace="layout :: header"></div>
+        <div class="col-12">
+            <div class="col-8 vertikal-line-right">
+                <h2 class="center">List Fasilitas IT Del</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nama Fasilitas</th>
+                            <th>Gambar Fasilitas</th>
+                            <td>Keterangan</td>
+                          </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each= "fasilitass :${fasilitas}">
+                            <td th:text="${fasilitass.nama_fasilitas}"></td>
+                            <td th:text="${fasilitass.gambar_fasilitas}"></td>
+                            <td th:text="${fasilitass.keterangan}"></td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-3">
+                <h2 class="left">Tambahkan Fasilitas</h2>
+                <form th:object="${newFasilitas}" th:action="@{/tambahf}" method="post" >
+                	<input type="hidden" th:field="*{id}"/>
+                    <input type="text" class="form-input" placeholder="Nama Fasilitas" th:field="*{nama_fasilitas}"/>
+                    <input type="text" class="form-input" placeholder="Gambar Fasilitas"  th:field="*{gambar_fasilitas}"/>
+                    <input type="text" class="form-input" placeholder="Keterangan"  th:field="*{keterangan}"/>
+                    <input type="submit" value="Tambahkan" class="btn-outline"/>
+                </form>
+                
+            </div>
+        </div>
+    </body>
+</html>
